@@ -25,10 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
-    - name: npm install and build webpack
-      run: |
-         npm install
-         npm run build
+    
     - uses: actions/upload-artifact@main
       with:
          name: webpack artifacts
